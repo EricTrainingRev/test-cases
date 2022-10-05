@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homepage</title>
+</head>
+<script>
+    window.addEventListener("unload", sessionStorage.clear)
+    sessionStorage.getItem("username") ? greeting.textContent = sessionStorage.getItem("username") : window.location.href="login-positive.html" 
+</script>
+<body>
+    <h1 id="greeting"></h1>
+</body>
+<script>
+    greeting.textContent = `Greetings ${sessionStorage.getItem("username")}`;
+</script>
+</html>

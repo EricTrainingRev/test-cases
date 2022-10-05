@@ -1,0 +1,2 @@
+Signup-Negative incorrectly formats the pattern attribute for the password input and allows for the
+username and password to match instead of preventing it.

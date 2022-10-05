@@ -1,0 +1,3 @@
+- Users should not be able to continue until they have read the entire legal document
+- Users must provide their first and last name at the start of the document
+- Users must initial the document at the end with their first and last initials capitalized

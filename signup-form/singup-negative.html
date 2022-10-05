@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+</head>
+<body>
+    <form>
+        <h1>Sign Up!</h1>
+        <p id="instructions">Usernames and Passwords should contain 6-10 characters and at least one lower, upper, and numeric character. They should not be the same</p>
+        <label for="username">Username</label>
+        <input type="text" placeholder="username" id="username" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,10}" title="Usernames must be 6-10 characters long and contain an upper, lower, and numeric character" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" minlength="6" maxlength="10" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,10}" title="Usernames must be 6-10 characters long and contain an upper, lower, and numeric character, and not be the same as the username" required>
+        <button type="submit">submit</button>
+    </form>
+</body>
+<script>
+    username.addEventListener("input",()=>{
+        password.pattern = `(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[${username.value}]).{6,10}`;
+    });
+    document.addEventListener("submit",(e)=>{  
+        e.preventDefault();
+        alert("Success")
+    });
+</script>
+</html>
