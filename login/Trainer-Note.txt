@@ -1,1 +1,1 @@
-The Login Negative webpage will indicate if the username or password specifically is incorrect, which breaks the business rules 
+The Login webpage will indicate if the username or password specifically is incorrect, which breaks the business rules 
